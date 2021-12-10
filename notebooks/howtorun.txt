@@ -1,0 +1,30 @@
+A Google Colab környezetében futtathatóak a kódok.
+
+Az outputhoz szükséges a drive-on egy fájlrendszert kialakítani, hogy futtatható legyen.
+
+A saját drive-ban létre kell hozni egy mappát 'thesis_results' néven.
+
+Ezután a következő mappákat kell ebben létrehozni (persze csak azokat, amik használva vannak a notebook-ban):
+
+anime_faces
+anime_bg
+anime_all
+anime_all_simple
+pokemon
+pokemon_all
+pokemon_all_simple
+faces
+nature_bg
+faces_all
+faces_all_simple
+
+Mindegyik mappába a következő mappákat kell létrehozni:
+
+training
+generated_images
+
+FONTOS: Ha nincs még semmi adat a mappákban, akkor a model betöltésekor a loading-ot False-ra kell állítani!!!!!
+
+wgan = WGANGP(loading=False)
+
+Gyorsabb működés érdekében érdemes beállítani a Connection type-ot GPU-ra.
